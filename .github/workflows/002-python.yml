@@ -1,0 +1,8 @@
+name: Testando Github Actions com Python
+on: workflow_dispatch
+jobs:
+  clone-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonando repositório
+        uses: action/checkout@v3

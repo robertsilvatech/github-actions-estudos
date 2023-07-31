@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: '3.10'
       - name: Instalando requirements
-        run: python script.py
+        run: pip install -r requirements.txt
       - name: Verificando a versão do Flask
         run: flask --version
   

@@ -1,0 +1,12 @@
+name: Primeiro Workflow
+on: workflow_dispatch
+jobs:
+  primeiro-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Primeiro step
+        run: echo "Olá GitHub Actions"
+      - name: Comando multi-line
+        run: |
+          echo "Linha 1"
+          echo "Linha 2"
